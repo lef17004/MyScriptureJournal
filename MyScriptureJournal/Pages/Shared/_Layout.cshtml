@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/MyScriptureJournal.styles.css" asp-append-version="true" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -31,6 +34,7 @@
         </nav>
     </header>
     <div class="container">
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -48,4 +52,9 @@
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+<style>
+    * {
+        font-family: 'Balsamiq Sans', cursive;
+    }
+</style>
 </html>
