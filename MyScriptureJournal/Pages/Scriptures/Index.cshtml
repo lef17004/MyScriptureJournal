@@ -14,12 +14,12 @@
 <form>
    
     <p>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Notes" />
+        Title: <input type="Notes" asp-for="SearchString" />
+        <input type="submit" value="Filter Notes" />
     </p>
     <p>
 
-        Book: <select asp-for="BookName" asp-items="Model.Books">
+        <select asp-for="BookName" asp-items="Model.Books" onchange="this.form.submit()">
             <option value="">All</option>
         </select>
     </p>
